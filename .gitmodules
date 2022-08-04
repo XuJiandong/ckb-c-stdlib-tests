@@ -1,0 +1,3 @@
+[submodule "deps/ckb-c-stdlib-dev"]
+	path = deps/ckb-c-stdlib-dev
+	url = git@github.com:nervosnetwork/ckb-c-stdlib.git
