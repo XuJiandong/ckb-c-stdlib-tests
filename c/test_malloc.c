@@ -10,6 +10,12 @@
 
 #define COUNT_OF(a) (sizeof(a) / sizeof(a[0]))
 
+void reset(void) {
+    s_program_break = CKB_BRK_MIN;
+    memset(&mal, 0, sizeof(mal));
+}
+
+
 void loop_free(void *array[], size_t array_length, size_t step) {
   for (size_t i = 0; i < array_length; i += step) {
     free(array[i]);
@@ -61,5 +67,10 @@ void test_sbrk() {
 
 int main() {
   test_malloc();
+  reset();
+  test_malloc();
+  reset();
+  test_sbrk();
+  reset();
   return 0;
 }
