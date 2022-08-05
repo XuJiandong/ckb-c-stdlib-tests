@@ -1,3 +1,5 @@
 [submodule "deps/ckb-c-stdlib-dev"]
 	path = deps/ckb-c-stdlib-dev
-	url = git@github.com:nervosnetwork/ckb-c-stdlib.git
+	url = https://github.com/XuJiandong/ckb-c-stdlib.git
+    branch = malloc
+
